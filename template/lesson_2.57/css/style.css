@@ -1,0 +1,43 @@
+body {
+    background: #bde0fe;
+    color: #185e7d;
+
+}
+
+.wrapper {
+    margin: 30px auto 0;
+    max-width: 400px;
+    position: relative;
+    padding-top: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 48px;
+
+}
+
+.title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 20px;
+    width: 55px;
+    height: 55px;
+    background: #ffc8dd;
+    border: solid 3px #fff;
+    border-radius: 50px;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: 55px;
+    height: 55px;
+    background: #acecd7;
+    border: solid 3px #fff;
+    border-radius: 50px;
+}
