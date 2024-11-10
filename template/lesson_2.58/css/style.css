@@ -1,0 +1,54 @@
+body {
+    background: #03045e;
+}
+
+.wrapper {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    max-width: 900px;
+}
+
+.transition-square {
+    position: absolute;
+    top: 15%;
+    width: 200px;
+    height: 200px;
+    background: #00b4d8;
+    border-radius: 20px;
+    box-shadow: 2px 2px 40px #99d8e4;
+}
+
+.slider {
+    position: absolute;
+    bottom: -100px;
+    left: -200px;
+    width: 0;
+    height: 30px;
+    transition: 1s linear;
+    background: aliceblue;
+}
+
+
+.success {
+    margin-top: 45%;
+    text-align: center;
+    font-family: "Verdana", sans-serif;
+    color: #03045e;
+    font-size: 22px;
+    opacity: 0;
+    transition-delay: 1s;
+}
+
+.transition-square:hover .slider{
+    width: 600px;
+}
+
+.transition-square:hover .success {
+    opacity: 1;
+}
+
+
+
